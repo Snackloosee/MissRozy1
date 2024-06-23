@@ -11,60 +11,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from urllib.parse import quote_plus
 from util.file_properties import get_name, get_hash, get_media_file_size
 
-# ------------------------------------------------------------------------------------------------------
-import time
-from datetime import datetime, timedelta
-from collections import defaultdict
-
-# Example in-memory storage (you might want to use a database in a real application)
-user_file_requests = defaultdict(lambda: {'count': 0, 'last_request_time': None})
-
-# Function to check if user can receive more files
-def can_send_files(user_id):
-    info = user_file_requests[user_id]
-    if info['last_request_time'] is None:
-        return True
-    elif info['count'] < 2:
-        return True
-    else:
-        # Check if an hour has passed since the last request
-        last_request_time = info['last_request_time']
-        now = datetime.now()
-        if (now - last_request_time) >= timedelta(hours=1):
-            # Reset count and allow sending
-            info['count'] = 0
-            info['last_request_time'] = now
-            return True
-        else:
-            return False
-
-# Function to handle file request
-def handle_file_request(user_id):
-    if can_send_files(user_id):
-        # Send file here
-        # Example: send_file(user_id)
-        # Assuming file sent, increment count
-        user_file_requests[user_id]['count'] += 1
-        user_file_requests[user_id]['last_request_time'] = datetime.now()
-        return True
-    else:
-        return False
-
-# Example usage
-user_id = 'example_user_id'
-
-# Simulate file requests
-for _ in range(5):
-    if handle_file_request(user_id):
-        print(f"File sent to user {user_id}")
-    else:
-        print(f"User {user_id} has reached the file limit for this hour. Please try again later.")
-
-    # Simulate time passing (for demonstration purposes)
-    time.sleep(30)  # Simulate some delay between requests
-
-#---------------------------------------------------------------------------------------------------------
-
 async def reply_forward(message: Message, file_id: int):
 
     try:
