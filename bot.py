@@ -70,67 +70,6 @@ from handlers.helpers import  decode, get_messages
 from pyrogram.enums import ParseMode
 import sys
 
-#--------------------------------------------------------------------------------------
-
-import telebot
-from datetime import datetime, timedelta
-from collections import defaultdict
-
-# Initialize your Telegram bot instance
-bot = telebot.TeleBot('YOUR_TELEGRAM_BOT_TOKEN')
-
-# Initialize a dictionary to store user file request data
-user_file_requests = defaultdict(lambda: {'count': 0, 'last_request_time': None})
-
-# Function to check if user can receive more files
-def can_send_files(user_id):
-    info = user_file_requests[user_id]
-    if info['last_request_time'] is None:
-        return True
-    elif info['count'] < 2:
-        return True
-    else:
-        # Check if an hour has passed since the last request
-        last_request_time = info['last_request_time']
-        now = datetime.now()
-        if (now - last_request_time) >= timedelta(hours=1):
-            # Reset count and allow sending
-            info['count'] = 0
-            info['last_request_time'] = now
-            return True
-        else:
-            return False
-
-# Function to handle file request
-def handle_file_request(user_id):
-    if can_send_files(user_id):
-        # Here you would send the file to the user (implement your logic)
-        # Example: bot.send_document(user_id, document_path)
-        
-        # Assuming file sent, increment count and update last request time
-        user_file_requests[user_id]['count'] += 1
-        user_file_requests[user_id]['last_request_time'] = datetime.now()
-        return True
-    else:
-        return False
-
-# Example: Handle '/sendfile' command
-@bot.message_handler(commands=['sendfile'])
-def send_file_handler(message):
-    user_id = message.chat.id
-    
-    if handle_file_request(user_id):
-        # File sent successfully
-        bot.send_message(user_id, "File sent!")
-    else:
-        # User reached the file limit for this hour
-        bot.send_message(user_id, "You've reached the file limit for this hour. Please try again later.")
-
-# Start the bot
-bot.polling()
-
-
-#--------------------------------------------------------------------------------------
 
 MediaList = {}
 Bot.start()
