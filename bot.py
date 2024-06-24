@@ -417,13 +417,13 @@ async def Lazy_start():
                             InlineKeyboardButton("Request Your DRAMA", url="https://t.me/kdrama_girlchat"),
                             InlineKeyboardButton("KDrama Channel", url="https://t.me/kdrama_girl")
                         ]
-                        #[
-                        #    InlineKeyboardButton("About bot", callback_data="aboutbot"),
-                        #    InlineKeyboardButton("About Dev", callback_data="aboutdevs")
-                        #],
-                        #[
-                        #    InlineKeyboardButton("Courses Channel", url="https://t.me/kdrama_girl")
-                        #]
+                        [
+                            InlineKeyboardButton("About bot", callback_data="aboutbot"),
+                            InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        ],
+                        [
+                            InlineKeyboardButton("Courses Channel", url="https://t.me/kdrama_girl")
+                        ]
                     ]
                 )
             )
@@ -437,13 +437,13 @@ async def Lazy_start():
                             InlineKeyboardButton("Request Your DRAMA", url="https://t.me/kdrama_girlchat"),
                             InlineKeyboardButton("KDrama Channel", url="https://t.me/kdrama_girl")
                         ]
-                        #[
-                        #    InlineKeyboardButton("About Dev", callback_data="aboutbot"),
-                        #    InlineKeyboardButton("About Bot", callback_data="aboutdevs")
-                        #],
-                        #[
-                        #    InlineKeyboardButton("Courses Channel", url="https://t.me/kdrama_girl")
-                        #]
+                        [
+                            InlineKeyboardButton("About Dev", callback_data="aboutbot"),
+                            InlineKeyboardButton("About Bot", callback_data="aboutdevs")
+                        ],
+                        [
+                            InlineKeyboardButton("Courses Channel", url="https://t.me/kdrama_girl")
+                        ]
                     ]
                 )
             )
@@ -495,13 +495,13 @@ async def Lazy_start():
                             InlineKeyboardButton("Request Your DRAMA", url="https://t.me/kdrama_girlchat"),
                             InlineKeyboardButton("KDrama Channel", url="https://t.me/kdrama_girl")
                         ]
-                        #[
-                        #    InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        #    InlineKeyboardButton("About Bot", callback_data="aboutdevs")
-                        #],
-                        #[
-                        #    InlineKeyboardButton("Courses Channel", url="https://t.me/kdrama_girl")
-                        #]
+                        [
+                            InlineKeyboardButton("About Bot", callback_data="aboutbot"),
+                            InlineKeyboardButton("About Bot", callback_data="aboutdevs")
+                        ],
+                        [
+                            InlineKeyboardButton("Courses Channel", url="https://t.me/kdrama_girl")
+                        ]
                     ]
                 )
             )
@@ -515,13 +515,13 @@ async def Lazy_start():
                             InlineKeyboardButton("Request Your DRAMA", url="https://t.me/kdrama_girlchat"),
                             InlineKeyboardButton("KDrama Channel", url="https://t.me/kdrama_girl")
                         ]
-                        #[
-                        #    InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        #    InlineKeyboardButton("About Dev", callback_data="aboutdevs")
-                        #],
-                        #[
-                        #    InlineKeyboardButton("Courses Channel", url="https://t.me/kdrama_girl")
-                        #]
+                        [
+                            InlineKeyboardButton("About Bot", callback_data="aboutbot"),
+                            InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        ],
+                        [
+                            InlineKeyboardButton("Courses Channel", url="https://t.me/kdrama_girl")
+                        ]
                     ]
                 )
             )
