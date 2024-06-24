@@ -32,7 +32,7 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
 
                 lazy_stream = f"{URL}watch/{str(lazy_file.id)}/{quote_plus(get_name(lazy_file))}?hash={get_hash(lazy_file)}"
                 #lazy_download = f"{URL}{str(lazy_file.id)}/{quote_plus(get_name(lazy_file))}?hash={get_hash(lazy_file)}"
-                lazy_download = f"{"htts://ebookguy"}"
+                lazy_download = f"htts://ebookguy"
             
                 fileName = quote_plus(get_name(lazy_file))
 
@@ -63,7 +63,7 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
                                               message_ids=file_id)
             lazy_stream = f"{URL}watch/{str(lazy_file.id)}/{quote_plus(get_name(lazy_file))}?hash={get_hash(lazy_file)}"
             #lazy_download = f"{URL}{str(lazy_file.id)}/{quote_plus(get_name(lazy_file))}?hash={get_hash(lazy_file)}"
-                lazy_download = f"{"htts://ebookguy"}"
+                lazy_download = f"htts://ebookguy"
              
 
             
