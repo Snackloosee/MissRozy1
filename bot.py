@@ -124,10 +124,11 @@ async def Lazy_start():
                         [
                            InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                            InlineKeyboardButton("About Dev", callback_data="aboutdevs")
-                        ],
-                        [
-                           InlineKeyboardButton("Courses Channel", url="https://t.me/course_guy")
-                        ]]))
+                        ]
+                        #[
+                         #  InlineKeyboardButton("Courses Channel", url="https://t.me/course_guy")
+                        #]
+                    ]))
             else :
                 await cmd.reply_photo(photo=lazy_pic,
                 caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
@@ -140,10 +141,11 @@ async def Lazy_start():
                         [
                             InlineKeyboardButton("About Bot", callback_data="aboutbot"),
                             InlineKeyboardButton("About Dev", callback_data="aboutdevs")
-                        ],
-                        [
-                           InlineKeyboardButton("Courses Channel", url="https://t.me/course_guy")
-                        ]]))
+                        ]
+                      #  [
+                     #      InlineKeyboardButton("Courses Channel", url="https://t.me/course_guy")
+                    #    ]
+                    ]))
             
         else:
             try:
