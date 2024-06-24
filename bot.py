@@ -118,8 +118,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🍿suppor† group", url="https://t.me/kdrama_girl"),
-                            InlineKeyboardButton("🔊Books channel", url="https://t.me/kdrama_girl")
+                            InlineKeyboardButton("Request Your DRAMA", url="https://t.me/kdrama_girlchatchat"),
+                            InlineKeyboardButton("KDrama Channel", url="https://t.me/kdrama_girl")
                         ],
                         [
                             InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -134,8 +134,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🍿suppor† group", url="https://t.me/kdrama_girl"),
-                            InlineKeyboardButton("🔊Books channel", url="https://t.me/kdrama_girl")
+                            InlineKeyboardButton("Request Your DRAMA", url="https://t.me/kdrama_girlchat"),
+                            InlineKeyboardButton("KDrama Channel", url="https://t.me/kdrama_girl")
                         ],
                         [
                             InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -184,7 +184,7 @@ async def Lazy_start():
                     return
 
             if message.from_user.id in Config.BANNED_USERS:
-                await message.reply_text("ꜱᴏʀʀʏ, ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ!\n\nContact [Support Group](https://t.me/kdrama_girl)",
+                await message.reply_text("ꜱᴏʀʀʏ, ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ!\n\nContact [Support Group](https://t.me/kdrama_girlchat)",
                                         disable_web_page_preview=True)
                 return
 
@@ -414,8 +414,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🍿suppor† group", url="https://t.me/kdrama_girl"),
-                            InlineKeyboardButton("🔊Books channel", url="https://t.me/kdrama_girl")
+                            InlineKeyboardButton("Request Your DRAMA", url="https://t.me/kdrama_girlchat"),
+                            InlineKeyboardButton("KDrama Channel", url="https://t.me/kdrama_girl")
                         ],
                         [
                             InlineKeyboardButton("About bot", callback_data="aboutbot"),
@@ -434,8 +434,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🍿suppor† group", url="https://t.me/kdrama_girl"),
-                            InlineKeyboardButton("🔊Books channel", url="https://t.me/kdrama_girl")
+                            InlineKeyboardButton("Request Your DRAMA", url="https://t.me/kdrama_girlchat"),
+                            InlineKeyboardButton("KDrama Channel", url="https://t.me/kdrama_girl")
                         ],
                         [
                             InlineKeyboardButton("About Dev", callback_data="aboutbot"),
@@ -458,7 +458,7 @@ async def Lazy_start():
                     user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                     if user.status == "kicked":
                         await cmd.message.edit(
-                            text="ꜱᴏʀʀʏ ꜱɪʀ, ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜꜱᴇ ᴍᴇ. ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [Support Group](https://t.me/kdrama_girl).",
+                            text="ꜱᴏʀʀʏ ꜱɪʀ, ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜꜱᴇ ᴍᴇ. ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [Support Group](https://t.me/kdrama_girlchat).",
                             disable_web_page_preview=True
                         )
                         return
@@ -481,7 +481,7 @@ async def Lazy_start():
                     return
                 except Exception:
                     await cmd.message.edit(
-                        text="ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ. ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [Support Group](https://t.me/kdrama_girl).",
+                        text="ꜱᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ. ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [Support Group](https://t.me/kdrama_girlchat).",
                         disable_web_page_preview=True
                     )
                     return
@@ -492,8 +492,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🍿suppor† group", url="https://t.me/kdrama_girl"),
-                            InlineKeyboardButton("🔊Books channel", url="https://t.me/kdrama_girl")
+                            InlineKeyboardButton("Request Your DRAMA", url="https://t.me/kdrama_girlchat"),
+                            InlineKeyboardButton("KDrama Channel", url="https://t.me/kdrama_girl")
                         ],
                         [
                             InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -512,8 +512,8 @@ async def Lazy_start():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🍿suppor† group", url="https://t.me/kdrama_girl"),
-                            InlineKeyboardButton("🔊Books channel", url="https://t.me/kdrama_girl")
+                            InlineKeyboardButton("Request Your DRAMA", url="https://t.me/kdrama_girlchat"),
+                            InlineKeyboardButton("KDrama Channel", url="https://t.me/kdrama_girl")
                         ],
                         [
                             InlineKeyboardButton("About Bot", callback_data="aboutbot"),
