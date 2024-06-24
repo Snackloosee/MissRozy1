@@ -40,9 +40,9 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
                     text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download",
-                                                                             url=lazy_download
-                                                                            )  # we download Link
+                    reply_markup=InlineKeyboardMarkup([[#InlineKeyboardButton("web Download",
+                                                         #                    url=lazy_download
+                                                          #                  )  # we download Link
                                                      # InlineKeyboardButton('▶Stream online', url=lazy_stream)
                                                       ]])  # web stream Link
                 )
@@ -51,9 +51,9 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
                                           reply_markup=InlineKeyboardMarkup(
                                             [
                                                 [
-                                                 InlineKeyboardButton("Fast Download",
-                                                                      url=lazy_download
-                                                                     )
+                                                 #InlineKeyboardButton("Fast Download",
+                                                  #                    url=lazy_download
+                                                   #                  )
                                                   #InlineKeyboardButton("▶Stream online", url=lazy_stream),
                                                 ],
                                             ]),
@@ -72,9 +72,9 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download",
-                                                                         url=lazy_download
-                                                                        )  # we download Link
+                reply_markup=InlineKeyboardMarkup([[#InlineKeyboardButton("web Download",
+                                                     #                    url=lazy_download
+                                                      #                  )  # we download Link
                                                    # InlineKeyboardButton('▶Stream online', url=lazy_stream)
                                                    ]])  # web stream Link
             )
@@ -83,9 +83,9 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
                                               reply_markup=InlineKeyboardMarkup(
                                             [
                                                 [
-                                                  InlineKeyboardButton("Fast Download",
-                                                                       url=lazy_download
-                                                                      )
+                                                  #InlineKeyboardButton("Fast Download",
+                                                   #                    url=lazy_download
+                                                    #                  )
                                                   #InlineKeyboardButton("▶Stream online", url=lazy_stream),
                                                ],
                                             ]),
