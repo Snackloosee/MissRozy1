@@ -7,7 +7,7 @@ from pyrogram import Client
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from handlers.helpers import str_to_b64
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+#from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from urllib.parse import quote_plus
 from util.file_properties import get_name, get_hash, get_media_file_size
 
@@ -39,20 +39,20 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
                     text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                     quote=True,
                     disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download)  # we download Link
-                                                       # InlineKeyboardButton('▶Stream online', url=lazy_stream)
-                                                       ]])  # web stream Link
+                    #reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download)  # we download Link
+                    #                                 # InlineKeyboardButton('▶Stream online', url=lazy_stream)
+                    #                                  ]])  # web stream Link
                 )
                 return await bot.copy_message(chat_id=user_id, from_chat_id=Config.DB_CHANNEL,
                                           message_id=file_id, 
-                                          reply_markup=InlineKeyboardMarkup(
-                                            [
-                                                [
-                                                  InlineKeyboardButton("Fast Download", url=lazy_download)
-                                                  #InlineKeyboardButton("▶Stream online", url=lazy_stream),
-                                                ],
-                                            ]),
-                                            )
+                                        #  reply_markup=InlineKeyboardMarkup(
+                                         #   [
+                                          #      [
+                                           #       InlineKeyboardButton("Fast Download", url=lazy_download)
+                                            #      #InlineKeyboardButton("▶Stream online", url=lazy_stream),
+                                             #   ],
+                                            #]),
+                                            #)
         elif Config.FORWARD_AS_COPY is False:
             lazy_file = await bot.copy_message(chat_id=user_id, from_chat_id=Config.DB_CHANNEL,
                                               message_ids=file_id)
@@ -63,20 +63,20 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download)  # we download Link
+               # reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download)  # we download Link
                                                    # InlineKeyboardButton('▶Stream online', url=lazy_stream)
-                                                   ]])  # web stream Link
+                #                                   ]])  # web stream Link
             )
             return await bot.forward_messages(chat_id=user_id, from_chat_id=Config.DB_CHANNEL,
                                               message_ids=file_id,
-                                              reply_markup=InlineKeyboardMarkup(
-                                            [
-                                                [
-                                                  InlineKeyboardButton("Fast Download", url=lazy_download)
+                 #                             reply_markup=InlineKeyboardMarkup(
+                  #                          [
+                   #                             [
+                    #                              InlineKeyboardButton("Fast Download", url=lazy_download)
                                                   #InlineKeyboardButton("▶Stream online", url=lazy_stream),
-                                                ],
-                                            ]),
-                                            )
+                     #                           ],
+                      #                      ]),
+                       #                     )
 
     except FloodWait as e:
         await asyncio.sleep(e.value)
