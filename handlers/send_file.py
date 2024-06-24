@@ -7,7 +7,7 @@ from pyrogram import Client
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from handlers.helpers import str_to_b64
-#from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from urllib.parse import quote_plus
 from util.file_properties import get_name, get_hash, get_media_file_size
 
